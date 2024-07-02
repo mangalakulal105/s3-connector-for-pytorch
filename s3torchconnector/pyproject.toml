@@ -26,16 +26,6 @@ dependencies = [
     "s3torchconnectorclient >= 1.2.3",
 ]
 
-[project.optional-dependencies]
-test = [
-    "pytest",
-    "pytest-timeout",
-    "hypothesis",
-    "flake8",
-    "black",
-    "mypy"
-]
-
 e2e = [
     "torchdata",
     "torchvision",
@@ -54,9 +44,6 @@ lightning-tests = [
     "s3fs"
 ]
 
-[tool.setuptools.packages]
-# Pure Python packages/modules
-find = { where = ["src"] }
 
 [tool.setuptools]
 dynamic = ["version"]

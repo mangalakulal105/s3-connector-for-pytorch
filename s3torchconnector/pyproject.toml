@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools", "build"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "s3torchconnector"
@@ -60,6 +60,8 @@ find = { where = ["src"] }
 
 [tool.setuptools]
 license-files = [ "LICENSE", "THIRD-PARTY-LICENSES", "NOTICE"]
+
+dependencies = ["requests"]
 
 [tool.hatch.build.hooks]
 [tool.hatch.build.hooks.post-install]

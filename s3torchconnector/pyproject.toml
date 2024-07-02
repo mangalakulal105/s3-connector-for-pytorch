@@ -49,4 +49,4 @@ lightning-tests = [
 dynamic = ["version"]
 
 [tool.setuptools.dynamic]
-version = { attr = "my_package.__version__" }
+version = { attr = "s3torchconnector.__version__" }

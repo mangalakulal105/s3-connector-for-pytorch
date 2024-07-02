@@ -59,9 +59,6 @@ lightning-tests = [
 find = { where = ["src"] }
 
 [tool.setuptools]
-license-files = [ "LICENSE", "THIRD-PARTY-LICENSES", "NOTICE"]
-
-[tool.setuptools]
 dynamic = ["version"]
 
 [tool.setuptools.dynamic]

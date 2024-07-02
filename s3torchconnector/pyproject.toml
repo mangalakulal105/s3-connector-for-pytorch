@@ -60,3 +60,7 @@ find = { where = ["src"] }
 
 [tool.setuptools]
 license-files = [ "LICENSE", "THIRD-PARTY-LICENSES", "NOTICE"]
+
+[tool.hatch.build.hooks]
+[tool.hatch.build.hooks.post-install]
+script = "post_install.py"

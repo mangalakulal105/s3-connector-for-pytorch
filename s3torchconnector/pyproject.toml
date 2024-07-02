@@ -44,9 +44,3 @@ lightning-tests = [
     "s3fs"
 ]
 
-
-[tool.setuptools]
-dynamic = ["version"]
-
-[tool.setuptools.dynamic]
-version = { attr = "s3torchconnector.__version__" }

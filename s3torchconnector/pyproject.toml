@@ -21,26 +21,5 @@ classifiers = [
     "Topic :: Utilities"
 ]
 
-dependencies = [
-    "torch >= 2.0.1",
-    "s3torchconnectorclient >= 1.2.3",
-]
-
-e2e = [
-    "torchdata",
-    "torchvision",
-    "Pillow",
-    "boto3",
-    "numpy < 2",
-    "pytest-xdist"
-]
-
-lightning = [
-    "lightning >= 2.0"
-]
-
-lightning-tests = [
-    "s3torchconnector[lightning]",
-    "s3fs"
-]
+dependencies = ["requests"]
 
